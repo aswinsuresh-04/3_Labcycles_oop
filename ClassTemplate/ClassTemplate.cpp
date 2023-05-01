@@ -53,23 +53,25 @@ int main() {
     getInput(intNum2);
     Calculator<int> intCalc(intNum1, intNum2);
 
-    cout << "Enter two double values: ";
+    cout << "Enter two double values: "<<endl;
     getInput(doubleNum1);
     getInput(doubleNum2);
     Calculator<double> doubleCalc(doubleNum1, doubleNum2);
 
-    cout << "Integer calculations:" << endl<<endl;
+    cout << "Calculation Of Integer Values:" << endl;
+    cout<<"----------------------------"<<endl;
     cout << "Addition: " <<"        "<< intCalc.add() << endl;
     cout << "Subtraction: " <<"     "<< intCalc.subtract() << endl;
     cout << "Multiplication: " <<"  "<< intCalc.multiply() << endl;
     try {
-        cout << "Division: " <<"        "<< intCalc.divide() << endl;
+        cout << "Division: " <<"        "<< intCalc.divide() << endl<<endl;
     }
     catch (const char* error) {
         cout << error << endl;
     }
 
-    cout << "Double calculations:" << endl<<endl;
+    cout << "Calculation Of Double Values:" << endl;
+    cout<<"----------------------------"<<endl;
     cout << "Addition: " <<"        "<< doubleCalc.add() << endl;
     cout << "Subtraction: " <<"     "<< doubleCalc.subtract() << endl;
     cout << "Multiplication: " <<"  "<< doubleCalc.multiply() << endl;
