@@ -11,11 +11,12 @@ class Division {
 
             cout << "Enter the denominator: ";
             cin >> denominator;
+            cout<<"------------------------"<<endl;
         }
 
         float divide() {
             if (denominator == 0) {
-                throw "Cannot Divide By Zero!!!";
+                throw "Cannot be Divided By ZERO!!!";
             }
             return (float)numerator / denominator;
         }
@@ -27,7 +28,7 @@ int main() {
     try {
         d.input();
         float result = d.divide();
-        cout << "Result of division: " << result << endl;
+        cout << "Result of your Division is: " << result << endl;
     }
     catch (const char* msg) {
         cerr << "Error!!!" << msg << endl;
